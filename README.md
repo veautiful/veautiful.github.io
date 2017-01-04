@@ -1,3 +1,21 @@
+# Driver (6.8)
+
+     public class DeckOfCardsTest
+    {
+    public static void main( String[] args )
+    {
+      DeckOfCards testdeck = new DeckOfCards();
+      testdeck.shuffle();
+
+      for ( int i = 1; i <= 52; i++ )
+      {
+         System.out.printf( "%-19s", testdeck.dealCard() );
+
+         if ( i % 4 == 0 ) // output a newline after every fourth card
+            System.out.println();
+      }
+     }
+    }
 # Card (6.8)
 
     public class Card
